@@ -18,12 +18,12 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav_logo">
-          <img src="images/logo.png" alt="logo imgage" />
+          <img src="images/logo.png" alt="logo image" />
           Coffee
         </a>
 
         <div class="nav_menu" id="nav-menu">
-          <ul class="nav_list grid">
+          <ul class="nav_list">
             <li class="nav_item">
               <a href="#home" class="nav_link">Home</a>
             </li>
@@ -47,13 +47,70 @@
         </div>
         <div class="nav_buttons">
           <!-- Theme change button-->
-          <i class="ri-moon-fill change-theme"></i>
+          <!--<i class="ri-moon-fill change-theme" id="theme-button"></i>-->
+
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <img src="images/coffee_1.png" alt="home image" class="home_img" />
+
+          <div class="home_data">
+            <h1 class="home_title">
+              Enjoy delicious
+
+              <div>
+                <img src="images/coffee_2.png" alt="home image" />
+                Coffee Drinks
+              </div>
+            </h1>
+
+            <p class="home_description">
+              Enjoy drinks in the best coffee shop and improve your day.
+            </p>
+
+            <a href="#" class="button">
+              Order Now
+              <i class="ri-arrow-right-fill"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about_container container grid">
+          <div class="about_data">
+            <span class="section_subtitle"> About Us </span>
+            <h2 class="section_title about_title">
+              <div>
+                We provide
+                <img src="images/coffee_6.png" alt="about image" />
+              </div>
+              Healty Drinks
+            </h2>
+
+            <p class="about_description">
+              We are known for our relaxed and welcoming atmosphere, where you
+              can sit and enjoy your best coffee.
+            </p>
+          </div>
+
+          <img src="images/coffee_3.png" alt="abput image" class="about_img" />
+        </div>
+      </section>
+
+      <section class="popular section" id="popular"></section>
+
+      <section class="recently section" id="recently"></section>
+    </main>
 
     <footer class="footer"></footer>
   </body>
+  <script src="main.js"></script>
 </html>
