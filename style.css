@@ -61,6 +61,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background 0.4s; /* for dark mode animation*/
 }
 
 h1,
@@ -320,6 +321,7 @@ img {
   box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08);
   border-radius: 1rem;
   text-align: center;
+  transition: background 0.4s; /* for dark mode animation*/
 }
 
 .popular_img {
@@ -444,6 +446,12 @@ img {
 
 .newsletter_button {
   cursor: pointer;
+}
+
+.newsletter_container,
+.newsletter_form,
+.newsletter_input {
+  transition: background 0.4s; /* for dark mode animation*/
 }
 
 .footer {
@@ -618,4 +626,27 @@ body.dark-theme {
 .dark-theme .newsletter_form,
 .dark-theme .newsletter_input {
   background-color: var(--body-color);
+}
+
+/*for small devices*/
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .section {
+    padding-block: 4rem 1rem;
+  }
+
+  .home_title {
+    font-size: 1.5rem;
+  }
+
+  .recently_data-img {
+    right: 0.5rem;
+  }
+
+  .newsletter_content {
+    padding: 6rem 1rem 2rem;
+  }
 }
